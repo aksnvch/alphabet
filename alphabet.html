@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+        <p>Alphabet</p>
+        <section id = "section">    
+        <p id = "p" class = "p"> A B C D E F G </p>
+        <p class = "ph1">come on out and play with me.</p>
+        <p id = "p" class = "p1">H I J </p>
+        <p class = "ph2">come and play.</p> 
+        <p id = "p" class = "p2">K L M </p>
+        <p class = "ph3">come with them. </p>
+        <p id = "p" class = "p3">N O P </p>
+        <p class = "ph4">near the tree. </p>
+        <p id = "p" class = "p4">Q R S T U V </p>
+        <p class = "ph5">Oh, how happy we will be. </p>
+        <p id = "p" class = "p5">W X Y Z </p>
+        <p class = "ph6">Lot's of fun for you and me. </p>
+        </section>
+</article>   
+<button id = "but1" onclick="change(), change1()">изменить</button> 
+<div id="box"></div>
+<script>
+    function change() {
+       
+        let mySelect = document.querySelectorAll('#p');
+        
+        for (let elem of mySelect) {
+            box.innerHTML += elem.innerHTML;
+        console.log(mySelect);
+         
+  }
+  let but = document.getElementById("but1")
+        but1.style.visibility = "hidden";  
+}
+
+    function change1() {
+        let section = document.getElementsByTagName("section");
+        let p = document.querySelectorAll(".p");
+        let ph1 = document.querySelectorAll(".ph1");
+        let ph2 = document.querySelectorAll(".ph2");
+        let ph3 = document.querySelectorAll(".ph3");
+        let ph4 = document.querySelectorAll(".ph4");
+        let ph5 = document.querySelectorAll(".ph5");
+        let ph6 = document.querySelectorAll(".ph6");
+        let p1 = document.querySelectorAll(".p1");
+        let p2 = document.querySelectorAll(".p2");
+        let p3 = document.querySelectorAll(".p3");
+        let p4 = document.querySelectorAll(".p4");
+        let p5 = document.querySelectorAll(".p5");
+        for (i = 0; i < section.length; i++) {
+                // myClass[i].style.border = "5px dotted red";
+                section[i].style.cssText = 'color: white; font-size: 25px; background-color: LightPink;';
+                ph1[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                ph2[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                ph3[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                ph4[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                ph5[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                ph6[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p1[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p2[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p3[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p4[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+                p5[i].style.cssText = 'border: 5px dotted MediumVioletRed;';
+
+
+            }
+       
+        
+        
+
+        
+            
+            
+        }
+</script>
+</body>
+</html>
